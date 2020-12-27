@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.profile.page.DataOrangtuaFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/data_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="27dp"
+                        android:text="@string/do_ayah"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/collon"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="8dp" />
+                    <TextView
+                        android:id="@+id/do_nama_ayah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strip"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="27dp"
+                        android:text="@string/do_pekerjaan_ayah"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/collon"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="8dp" />
+                    <TextView
+                        android:id="@+id/do_pekerjaan_ayah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strip"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/do_instansi_ayah"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:maxLines="2"
+                        android:layout_marginEnd="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/collon"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="8dp" />
+                    <TextView
+                        android:id="@+id/do_instansi_ayah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strip"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="27dp"
+                        android:text="@string/do_ibu"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/collon"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="8dp" />
+                    <TextView
+                        android:id="@+id/do_nama_ibu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strip"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="27dp"
+                        android:text="@string/do_pekerjaan_ibu"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/collon"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="8dp" />
+                    <TextView
+                        android:id="@+id/do_pekerjaan_ibu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strip"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/do_instansi_ibu"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:maxLines="2"
+                        android:layout_marginEnd="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/collon"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="8dp" />
+                    <TextView
+                        android:id="@+id/do_instansi_ibu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strip"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/do_wali"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/collon"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="8dp" />
+                    <TextView
+                        android:id="@+id/do_nama_wali"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strip"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/do_pekerjaan_wali"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/collon"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="8dp" />
+                    <TextView
+                        android:id="@+id/do_pekerjaan_wali"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strip"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/do_instansi_wali"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:maxLines="3"
+                        android:layout_marginEnd="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/collon"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="8dp" />
+                    <TextView
+                        android:id="@+id/do_instansi_wali"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strip"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="20dp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:layout_below="@id/data_status"
+            android:id="@+id/btn_ubah_data_ortu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/do_ubah_data_ortu"
+            android:textAllCaps="false"
+            android:padding="20dp"
+            android:textSize="18sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorYellow"
+            android:textColor="@color/colorPrimary" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

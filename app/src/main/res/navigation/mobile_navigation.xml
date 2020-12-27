@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.jengger.studentportalappclient.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_profileFragment"
+        android:name="com.jengger.studentportalappclient.ui.profile.ProfileFragment"
+        android:label="@string/menu_profil"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_nav_profileFragment_to_editPribadiFragment"
+            app:destination="@id/editPribadiFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_daftarUlangFragment"
+        android:name="com.jengger.studentportalappclient.ui.daftar_ulang.DaftarUlangFragment"
+        android:label="@string/menu_kuliah"
+        tools:layout="@layout/fragment_daftar_ulang" />
+    <fragment
+        android:id="@+id/nav_detailPengumumanFragment"
+        android:name="com.jengger.studentportalappclient.ui.detail_pengumuman.DetailPengumumanFragment"
+        android:label="@string/menu_pengumuman"
+        tools:layout="@layout/fragment_detail_pengumuman" >
+        <action
+            android:id="@+id/action_nav_detailPengumumanFragment_to_nav_pengumumanFragment"
+            app:destination="@id/nav_pengumumanFragment"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/nav_pengumumanFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_hasilStudiragment"
+        android:name="com.jengger.studentportalappclient.ui.hasil_studi.HasilStudiragment"
+        android:label="@string/menu_profil"
+        tools:layout="@layout/fragment_hasil_studiragment" />
+    <fragment
+        android:id="@+id/nav_jadwalFragment"
+        android:name="com.jengger.studentportalappclient.ui.jadwal.JadwalFragment"
+        android:label="@string/menu_kuliah"
+        tools:layout="@layout/fragment_jadwal" />
+    <fragment
+        android:id="@+id/nav_pengaturanFragment"
+        android:name="com.jengger.studentportalappclient.ui.pengaturan.PengaturanFragment"
+        android:label="@string/menu_pengaturan"
+        tools:layout="@layout/fragment_pengaturan" >
+        <action
+            android:id="@+id/action_nav_pengaturanFragment_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/nav_home"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_pengumumanFragment"
+        android:name="com.jengger.studentportalappclient.ui.pengumuman.PengumumanFragment"
+        android:label="@string/menu_pengumuman"
+        tools:layout="@layout/fragment_pengumuman" >
+        <action
+            android:id="@+id/action_nav_pengumumanFragment_to_nav_detailPengumumanFragment"
+            app:destination="@id/nav_detailPengumumanFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_presensiFragment"
+        android:name="com.jengger.studentportalappclient.ui.presensi.PresensiFragment"
+        android:label="@string/menu_kuliah"
+        tools:layout="@layout/fragment_presensi" />
+    <fragment
+        android:id="@+id/nav_rekapPresensiFragment"
+        android:name="com.jengger.studentportalappclient.ui.rekap_presensi.RekapPresensiFragment"
+        android:label="@string/menu_profil"
+        tools:layout="@layout/fragment_rekap_presensi" />
+    <fragment
+        android:id="@+id/nav_menuKuliahFragment"
+        android:name="com.jengger.studentportalappclient.ui.menu_pilihan.menu_kuliah.MenuKuliahFragment"
+        android:label="@string/menu_kuliah"
+        tools:layout="@layout/fragment_menu_kuliah" >
+        <action
+            android:id="@+id/action_nav_menuKuliahFragment_to_nav_jadwalFragment"
+            app:destination="@id/nav_jadwalFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/action_nav_menuKuliahFragment_to_nav_presensiFragment"
+            app:destination="@id/nav_presensiFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/action_nav_menuKuliahFragment_to_kalenderFragment"
+            app:destination="@id/kalenderFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/action_nav_menuKuliahFragment_to_nav_LMSFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:destination="@id/nav_LMSFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_menuProfileFragment"
+        android:name="com.jengger.studentportalappclient.ui.menu_pilihan.menu_profile.MenuProfileFragment"
+        android:label="@string/menu_profil"
+        tools:layout="@layout/fragment_menu_profile" >
+        <action
+            android:id="@+id/action_nav_menuProfileFragment_to_nav_profileFragment"
+            app:destination="@id/nav_profileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/action_nav_menuProfileFragment_to_nav_rekapPresensiFragment"
+            app:destination="@id/nav_rekapPresensiFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/action_nav_menuProfileFragment_to_nav_hasilStudiragment"
+            app:destination="@id/nav_hasilStudiragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+    <fragment
+        android:id="@+id/kalenderFragment"
+        android:name="com.jengger.studentportalappclient.ui.kalender.KalenderFragment"
+        android:label="@string/menu_kuliah"
+        tools:layout="@layout/fragment_kalender" />
+    <fragment
+        android:id="@+id/nav_wisudaFragment"
+        android:name="com.jengger.studentportalappclient.ui.menu_pilihan.menu_wisuda.MenuWisudaFragment"
+        android:label="@string/menu_wisuda"
+        tools:layout="@layout/fragment_menu_wisuda" >
+        <action
+            android:id="@+id/action_menuWisudaFragment_to_keterampilanFragment"
+            app:destination="@id/keterampilanFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/action_menuWisudaFragment_to_daftarWisudaFragment"
+            app:destination="@id/daftarWisudaFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/action_menuWisudaFragment_to_BInternasionalFragment"
+            app:destination="@id/BInternasionalFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/action_menuWisudaFragment_to_prestasiFragment"
+            app:destination="@id/prestasiFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/action_menuWisudaFragment_to_pernyataanFragment"
+            app:destination="@id/pernyataanFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/action_menuWisudaFragment_to_organisasiFragment"
+            app:destination="@id/organisasiFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/action_menuWisudaFragment_to_magangFragment"
+            app:destination="@id/magangFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+    <fragment
+        android:id="@+id/BInternasionalFragment"
+        android:name="com.jengger.studentportalappclient.ui.wisuda.b_internasional.BInternasionalFragment"
+        android:label="@string/menu_wisuda"
+        tools:layout="@layout/fragment_b_internasional" >
+        <action
+            android:id="@+id/action_BInternasionalFragment_to_tambahBInternasionalFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:destination="@id/tambahBInternasionalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/daftarWisudaFragment"
+        android:name="com.jengger.studentportalappclient.ui.wisuda.daftar_wisuda.DaftarWisudaFragment"
+        android:label="@string/menu_wisuda"
+        tools:layout="@layout/fragment_daftar_wisuda" />
+    <fragment
+        android:id="@+id/keterampilanFragment"
+        android:name="com.jengger.studentportalappclient.ui.wisuda.keterampilan.KeterampilanFragment"
+        android:label="@string/menu_wisuda"
+        tools:layout="@layout/fragment_keterampilan" >
+        <action
+            android:id="@+id/action_keterampilanFragment_to_tambahKeterampilanFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:destination="@id/tambahKeterampilanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/magangFragment"
+        android:name="com.jengger.studentportalappclient.ui.wisuda.magang.MagangFragment"
+        android:label="@string/menu_wisuda"
+        tools:layout="@layout/fragment_magang" >
+        <action
+            android:id="@+id/action_magangFragment_to_tambahMagangFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:destination="@id/tambahMagangFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/organisasiFragment"
+        android:name="com.jengger.studentportalappclient.ui.wisuda.organisasi.OrganisasiFragment"
+        android:label="@string/menu_wisuda"
+        tools:layout="@layout/fragment_organisasi" >
+        <action
+            android:id="@+id/action_organisasiFragment_to_tambahOrganisasiFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:destination="@id/tambahOrganisasiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pernyataanFragment"
+        android:name="com.jengger.studentportalappclient.ui.wisuda.pernyataan.PernyataanFragment"
+        android:label="@string/menu_wisuda"
+        tools:layout="@layout/fragment_pernyataan" />
+    <fragment
+        android:id="@+id/prestasiFragment"
+        android:name="com.jengger.studentportalappclient.ui.wisuda.prestasi.PrestasiFragment"
+        android:label="@string/menu_wisuda"
+        tools:layout="@layout/fragment_prestasi" >
+        <action
+            android:id="@+id/action_prestasiFragment_to_tambahPrestasiFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:destination="@id/tambahPrestasiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tambahBInternasionalFragment"
+        android:name="com.jengger.studentportalappclient.ui.wisuda.b_internasional.TambahBInternasionalFragment"
+        android:label="@string/menu_wisuda"
+        tools:layout="@layout/fragment_tambah_b_internasional" >
+        <action
+            android:id="@+id/action_tambahBInternasionalFragment_to_BInternasionalFragment"
+            app:destination="@id/BInternasionalFragment"
+            app:popUpTo="@id/BInternasionalFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/tambahKeterampilanFragment"
+        android:name="com.jengger.studentportalappclient.ui.wisuda.keterampilan.TambahKeterampilanFragment"
+        android:label="@string/menu_wisuda"
+        tools:layout="@layout/fragment_tambah_keterampilan" >
+        <action
+            android:id="@+id/action_tambahKeterampilanFragment_to_keterampilanFragment"
+            app:destination="@id/keterampilanFragment"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/keterampilanFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/tambahMagangFragment"
+        android:name="com.jengger.studentportalappclient.ui.wisuda.magang.TambahMagangFragment"
+        android:label="@string/menu_wisuda"
+        tools:layout="@layout/fragment_tambah_magang" >
+        <action
+            android:id="@+id/action_tambahMagangFragment_to_magangFragment"
+            app:destination="@id/magangFragment"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/magangFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/tambahOrganisasiFragment"
+        android:name="com.jengger.studentportalappclient.ui.wisuda.organisasi.TambahOrganisasiFragment"
+        android:label="@string/menu_wisuda"
+        tools:layout="@layout/fragment_tambah_organisasi" >
+        <action
+            android:id="@+id/action_tambahOrganisasiFragment_to_organisasiFragment"
+            app:destination="@id/organisasiFragment"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/organisasiFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/tambahPrestasiFragment"
+        android:name="com.jengger.studentportalappclient.ui.wisuda.prestasi.TambahPrestasiFragment"
+        android:label="@string/menu_wisuda"
+        tools:layout="@layout/fragment_tambah_prestasi" >
+        <action
+            android:id="@+id/action_tambahPrestasiFragment_to_prestasiFragment"
+            app:destination="@id/prestasiFragment"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/prestasiFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_LMSFragment"
+        android:name="com.jengger.studentportalappclient.ui.lms.LMSFragment"
+        android:label="@string/lms"
+        tools:layout="@layout/fragment_l_m_s" />
+    <fragment
+        android:id="@+id/nav_searchFragment"
+        android:name="com.jengger.studentportalappclient.ui.search.SearchFragment"
+        android:label="@string/search_pnm"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/nav_menuKuesionerFragment"
+        android:name="com.jengger.studentportalappclient.ui.kuesioner.MenuKuesionerFragment"
+        android:label="Kuesioner"
+        tools:layout="@layout/fragment_menu_kuesioner" />
+    <dialog
+        android:id="@+id/bottomDialogButton"
+        android:name="com.jengger.studentportalappclient.ui.profile.BottomDialogButton"
+        tools:layout="@layout/bottom_dialog_button"
+        android:label="BottomDialogButton" >
+        <action
+            android:id="@+id/action_bottomDialogButton_to_editDataOrtuFragment"
+            app:destination="@id/editDataOrtuFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+             />
+    </dialog>
+    <fragment
+        android:id="@+id/editDataOrtuFragment"
+        android:name="com.jengger.studentportalappclient.ui.profile.edit.EditDataOrtuFragment"
+        android:label="@string/edit_data_orangtua"
+        tools:layout="@layout/fragment_edit_data_ortu" >
+        <action
+            android:id="@+id/action_editDataOrtuFragment_to_nav_profileFragment"
+            app:destination="@id/nav_profileFragment"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/nav_profileFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/dataPribadiFragment"
+        android:name="com.jengger.studentportalappclient.ui.profile.page.DataPribadiFragment"
+        android:label="@string/edit_data_pribadi"
+        tools:layout="@layout/fragment_data_pribadi" />
+    <fragment
+        android:id="@+id/editPribadiFragment"
+        android:name="com.jengger.studentportalappclient.ui.profile.edit.EditPribadiFragment"
+        android:label="@string/edit_data_pribadi"
+        tools:layout="@layout/fragment_edit_pribadi" >
+        <action
+            android:id="@+id/action_editPribadiFragment_to_nav_profileFragment"
+            app:destination="@id/nav_profileFragment"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/nav_profileFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/dataOrangtuaFragment2"
+        android:name="com.jengger.studentportalappclient.ui.profile.page.DataOrangtuaFragment"
+        android:label="@string/edit_data_orangtua"
+        tools:layout="@layout/fragment_data_orangtua" />
+</navigation>

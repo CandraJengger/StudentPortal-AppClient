@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/presensi_mk"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/presensi_kuliah_value"
+            android:paddingEnd="20dp"/>
+
+        <TextView
+            android:id="@+id/presensi_status"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="@color/colorWhite80"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textAlignment="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/presensi_status_value"
+            android:textAllCaps="true"
+            android:background="@color/colorGreen"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+
+</LinearLayout>

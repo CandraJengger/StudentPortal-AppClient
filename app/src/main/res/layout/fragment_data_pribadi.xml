@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.profile.page.DataPribadiFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/data_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="27dp"
+                        android:text="@string/dp_NIK"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/collon"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="8dp" />
+                    <TextView
+                        android:id="@+id/dp_nik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strip"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="27dp"
+                        android:text="@string/dp_nama_lengkap"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/collon"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="8dp" />
+                    <TextView
+                        android:id="@+id/dp_nama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strip"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="27dp"
+                        android:text="@string/dp_lahir"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/collon"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="8dp" />
+                    <TextView
+                        android:id="@+id/dp_lahir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strip"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="27dp"
+                        android:text="@string/dp_jk"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/collon"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="8dp" />
+                    <TextView
+                        android:id="@+id/dp_jk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strip"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="27dp"
+                        android:text="@string/dp_agama"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/collon"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="8dp" />
+                    <TextView
+                        android:id="@+id/dp_agama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strip"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="27dp"
+                        android:text="@string/dp_alamat_asal"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/collon"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="8dp" />
+                    <TextView
+                        android:id="@+id/dp_alamat_asal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strip"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="27dp"
+                        android:text="@string/dp_kota"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/collon"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="8dp" />
+                    <TextView
+                        android:id="@+id/dp_kota"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strip"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="27dp"
+                        android:text="@string/dp_alamat_sekarang"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/collon"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="8dp" />
+                    <TextView
+                        android:id="@+id/dp_sekarang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strip"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="27dp"
+                        android:text="@string/dp_no_hp"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/collon"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="8dp" />
+                    <TextView
+                        android:id="@+id/dp_no_hp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strip"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="27dp"
+                        android:text="@string/dp_email"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/collon"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="8dp" />
+                    <TextView
+                        android:id="@+id/dp_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strip"
+                        android:textSize="17sp"
+                        style="@style/MyTextColor"
+                        android:layout_marginEnd="20dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_below="@id/data_status"
+            android:id="@+id/btn_ubah_data_pribadi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/db_ubah_data_diri"
+            android:textAllCaps="false"
+            android:padding="20dp"
+            android:textSize="18sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorYellow"
+            android:textColor="@color/colorPrimary" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

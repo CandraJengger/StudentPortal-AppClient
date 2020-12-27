@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="18dp"
+    android:orientation="vertical"
+    tools:context=".ui.detail_pengumuman.DetailPengumumanFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/detail_pengumuman"
+        android:layout_marginBottom="25dp"/>
+
+    <TextView
+        android:id="@+id/pengumuman_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pengumuman_judul"
+        android:textSize="19sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="2dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_bell"
+                app:tint="@color/colorPrimary"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="14dp"/>
+
+            <TextView
+                android:id="@+id/pengumuman_kategori"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dp_kategori"
+                android:textAllCaps="true"
+                android:background="@color/colorGreen"
+                android:textColor="@color/colorWhite80"
+                android:padding="4dp"
+                android:textSize="14sp"
+                style="@style/MyTextColor"
+                android:layout_marginEnd="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_calendar_today"
+                app:tint="@color/colorPrimary"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="14dp"/>
+
+            <TextView
+                android:id="@+id/pengumuman_tanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dp_tgl"
+                android:textAllCaps="true"
+                android:textSize="14sp"
+                style="@style/MyTextColor"
+                android:layout_marginEnd="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_schedule"
+                app:tint="@color/colorPrimary"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="14dp"/>
+
+            <TextView
+                android:id="@+id/pengumuman_jam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dp_jam"
+                android:textAllCaps="true"
+                android:textSize="14sp"
+                style="@style/MyTextColor"
+                android:layout_marginEnd="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_campaign"
+                app:tint="@color/colorPrimary"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="14dp"/>
+
+            <TextView
+                android:id="@+id/pengumuman_pengirim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dp_pengirim"
+                android:textAllCaps="true"
+                android:textSize="14sp"
+                style="@style/MyTextColor"
+                android:layout_marginEnd="20dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pengumuman_isi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dp_isi"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimary"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_kembali"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/dp_kembali"
+            android:textColor="@color/colorPrimary"
+            android:background="@color/colorGreen" />
+
+    </RelativeLayout>
+
+</LinearLayout>

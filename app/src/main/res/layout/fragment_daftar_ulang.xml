@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="18dp"
+    tools:context=".ui.daftar_ulang.DaftarUlangFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/daftar_ulang"
+        android:layout_marginBottom="15dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:layout_marginBottom="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Spinner
+                android:id="@+id/spinner_periode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:background="@color/colorPrimary"
+                android:padding="16dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_drop_down_24"
+                android:contentDescription="@string/icon_arrow"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:paddingStart="20dp"
+            android:textSize="17sp"
+            android:text="@string/ukt" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:text="@string/du_status" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/colorWhite100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/du_ukt"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorPrimary"
+            android:paddingStart="20dp"
+            android:textSize="17sp"
+            android:text="@string/strip"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/du_status"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorWhite80"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textAlignment="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textAllCaps="false"
+            android:background="@color/colorGreen"
+            android:textSize="16sp"
+            android:text="@string/du_status"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite100">
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btn_download"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="13dp"
+            android:background="@color/colorYellow"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:src="@drawable/ic_print"
+                    app:tint="@color/colorPrimary"
+                    android:layout_marginEnd="14dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/du_cetak"
+                    android:textSize="17sp"
+                    style="@style/MyTextColor"
+                    android:layout_marginEnd="20dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

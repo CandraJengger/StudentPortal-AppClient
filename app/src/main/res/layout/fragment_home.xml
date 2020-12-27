@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/txt_halo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/halo"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/txt_username"
+        android:layout_below="@id/txt_halo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/strip"
+        android:textColor="@android:color/black"
+        android:textSize="21sp"/>
+    
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_ucapan"
+        android:layout_below="@id/txt_username"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp">
+
+            <LinearLayout
+                android:layout_toStartOf="@id/ic_lamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_ucapan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/selamat_pagi"
+                    android:textColor="@color/colorWhite80"
+                    android:layout_marginBottom="1dp"
+                    android:layout_gravity="center"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/txt_tanggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dummy_tgl"
+                    android:textColor="@color/colorWhite80"
+                    android:layout_gravity="center"
+                    android:textSize="13sp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ic_lamp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/ic_lamp"
+                android:layout_marginBottom="-15dp"
+                android:contentDescription="@string/icon_lamp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:padding="14dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/card_ucapan"
+        android:layout_above="@id/rl_ket"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/diagram_presensi"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="20dp"/>
+
+        <lecho.lib.hellocharts.view.PieChartView
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rl_ket"
+        android:layout_above="@id/rl_mk"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorGreen" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="match_parent"
+                        android:paddingStart="15dp"
+                        android:text="@string/presensi_masuk"
+                        tools:ignore="RtlSymmetry" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorYellow" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="match_parent"
+                        android:paddingStart="15dp"
+                        android:text="@string/presensi_izin"
+                        tools:ignore="RtlSymmetry" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorRed" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="match_parent"
+                        android:paddingStart="15dp"
+                        android:text="@string/presensi_alfa"
+                        tools:ignore="RtlSymmetry" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_mk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp"
+        android:background="@color/colorYellow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/matakuliah_hari_ini"
+            android:textSize="16sp"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/txt_lihat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorYellow"
+            android:text="@string/lihat"
+            android:textColor="@color/colorWhite80"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_alignParentEnd="true"
+            tools:ignore="RelativeOverlap" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

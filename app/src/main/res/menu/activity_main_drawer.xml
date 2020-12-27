@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_apps"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_menuProfileFragment"
+            android:icon="@drawable/ic_account_circle"
+            android:title="@string/menu_profil" />
+        <item
+            android:id="@+id/nav_menuKuliahFragment"
+            android:icon="@drawable/ic_assignment"
+            android:title="@string/menu_kuliah" />
+        <item
+            android:id="@+id/nav_menuKuesionerFragment"
+            android:icon="@drawable/ic_star_half"
+            android:title="@string/menu_kuesioner" />
+        <item
+            android:id="@+id/nav_pengumumanFragment"
+            android:icon="@drawable/ic_chat_bubble"
+            android:title="@string/menu_pengumuman" />
+        <item
+            android:id="@+id/nav_searchFragment"
+            android:icon="@drawable/ic_search"
+            android:title="@string/menu_cari" />
+        <item
+            android:id="@+id/nav_daftarUlangFragment"
+            android:icon="@drawable/ic_beenhere"
+            android:title="@string/menu_daftar_ulang" />
+        <item
+            android:id="@+id/nav_wisudaFragment"
+            android:icon="@drawable/ic_school"
+            android:title="@string/menu_wisuda" />
+    </group>
+</menu>

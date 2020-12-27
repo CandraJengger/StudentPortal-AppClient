@@ -1,0 +1,396 @@
+<resources>
+    <string name="app_name">Student Portal</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Dimas Aldi Candra Saputra</string>
+    <string name="nav_header_subtitle">193307010</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <!--  Menu  -->
+    <string name="menu_home">Home</string>
+    <string name="menu_kuliah">Kuliah</string>
+    <string name="menu_profil">Profil</string>
+    <string name="menu_pengumuman">Pengumuman</string>
+    <string name="menu_daftar_ulang">Daftar Ulang</string>
+    <string name="menu_pengaturan">Pengaturan</string>
+    <string name="menu_wisuda">Wisuda</string>
+    <string name="menu_kuesioner">Kuesioner</string>
+    <string name="menu_cari">Search</string>
+
+    <!--  Kuesioner  -->
+    <string name="evaluasi_dosen">Evaluasi Dosen</string>
+    <string name="pemahaman_visi_misi">Pemahaman Visi Misi</string>
+    <string name="layanan_kewirausahaan">Layanan Kewirausahaan</string>
+
+    <!--  Home  -->
+    <string name="halo">Halo,</string>
+    <string name="dummy_nama">Dimas Aldi Candra S.</string>
+    <string name="dummy_tgl">21/11/2020</string>
+    <string name="dummy_jam">9:40 am</string>
+    <string name="diagram_presensi">Diagram Presensi</string>
+    <string name="presensi_masuk">Masuk</string>
+    <string name="presensi_izin">Izin</string>
+    <string name="presensi_alfa">Alpha</string>
+    <string name="selamat_pagi">Selamat Pagi</string>
+    <string name="selamat_siang">Selamat Siang</string>
+    <string name="selamat_sore">Selamat Sore</string>
+    <string name="selamat_malam">Selamat Malam</string>
+    <string name="matakuliah_hari_ini">Matakuliah hari ini</string>
+    <string name="lihat">Lihat</string>
+
+    <!--  Profil  -->
+    <string name="profil">Profil</string>
+    <string name="dummy_email">cjengger@gmail.com</string>
+    <string name="tab_status">Status</string>
+    <string name="tab_data_pribadi">Data Pribadi</string>
+    <string name="tab_data_orangtua">Data Orangtua</string>
+
+    <!-- Status -->
+    <string name="status_status_studi">Status Studi : </string>
+    <string name="status_npm">NPM : 193307010</string>
+    <string name="status_angkatan">Angkatan 2019</string>
+    <string name="status_prodi">D-III Teknologi Informasi</string>
+    <string name="status_kelas">Kelas 3A</string>
+    <string name="status_no_hp">082123123132</string>
+    <string name="status_kota">Kabupaten Ponorogo</string>
+    <string name="status_upload_ktp">Upload Scan KTP</string>
+    <string name="status_mhs">Aktif</string>
+
+    <!-- Data Pribadi -->
+    <string name="dp_NIK">NIK</string>
+    <string name="dp_NIK_value">1201230226010004</string>
+    <string name="dp_nama_lengkap">Nama Lengkap</string>
+    <string name="dp_nama_lengkap_value">Dimas Aldi Candra Saputra</string>
+    <string name="dp_lahir">Lahir</string>
+    <string name="dp_lahir_value">Ponorogo, 6 Juni 2001</string>
+    <string name="dp_jk">Jenis Kelamin</string>
+    <string name="dp_jk_value">Laki-laki</string>
+    <string name="dp_agama">Agama</string>
+    <string name="dp_agama_value">Islam</string>
+    <string name="dp_alamat_asal">Alamat Asal</string>
+    <string name="dp_alamat_asal_value">Ponorogo</string>
+    <string name="dp_kota">Kota/Kab Asal</string>
+    <string name="dp_kota_value">Ponorogo</string>
+    <string name="dp_no_hp">No. HP</string>
+    <string name="dp_no_hp_value">0821231231232</string>
+    <string name="dp_email">Email</string>
+    <string name="dp_email_value">cjengger@gmail.com</string>
+    <string name="db_ubah_data_diri">Ubah Data Diri</string>
+
+    <!-- Data Orang Tua -->
+    <string name="do_ayah">Nama Ayah</string>
+    <string name="do_ayah_value">Qais</string>
+    <string name="do_pekerjaan_ayah">Pekerjaan Ayah</string>
+    <string name="do_pekerjaan_ayah_value">Petani</string>
+    <string name="do_instansi_ayah">Instansi/Perusahaan Ayah</string>
+    <string name="do_instansi_ayah_value">Sawah</string>
+    <string name="do_ibu">Nama Ibu</string>
+    <string name="do_ibu_value">Laila</string>
+    <string name="do_pekerjaan_ibu">Pekerjaan Ibu</string>
+    <string name="do_pekerjaan_ibu_value">Petani</string>
+    <string name="do_instansi_ibu">Instansi/Perusahaan Ibu</string>
+    <string name="do_instansi_ibu_value">Sawah</string>
+    <string name="do_wali">Nama Wali (opsional)</string>
+    <string name="do_wali_value">Fulan</string>
+    <string name="do_pekerjaan_wali">Pekerjaan Wali (opsional)</string>
+    <string name="do_pekerjaan_wali_value">Petani</string>
+    <string name="do_instansi_wali">Instansi/Perusahaan Wali (opsional)</string>
+    <string name="do_instansi_wali_value">Sawah</string>
+    <string name="do_ubah_data_ortu">Ubah Data Orang Tua</string>
+
+    <!-- Rekap Presensi -->
+    <string name="rp">Rekap Presensi</string>
+    <string name="rp_hadir">Hadir</string>
+    <string name="rp_hadir_value">144 kuliah (548 jam)</string>
+    <string name="rp_izin">Izin</string>
+    <string name="rp_izin_value">0 kuliah (0 jam)</string>
+    <string name="rp_alpha">Alpha</string>
+    <string name="rp_alpha_value">0 kuliah (0 jam)</string>
+    <string name="rp_kosong">Kosong</string>
+    <string name="rp_kosong_value">0 kuliah (0 jam)</string>
+    <string name="rp_detail">Detail Presensi</string>
+    <string name="rp_smt">Semester 1</string>
+
+    <!-- Hasil Studi -->
+    <string name="hs">Hasil Studi</string>
+    <string name="hs_kode">Kode</string>
+    <string name="hs_kode_value">CC</string>
+    <string name="hs_nama_mk">Nama Matakuliah</string>
+    <string name="hs_nama_mk_value">Sistem Komputasi Awan</string>
+    <string name="hs_sks">SKS Teori / Praktik</string>
+    <string name="hs_sks_teori_value">2</string>
+    <string name="hs_sks_praktik_value">4</string>
+    <string name="hs_nilai_angka">Nilai Angka</string>
+    <string name="hs_nilai_angka_teori_value">4</string>
+    <string name="hs_nilai_angka_praktik_value">8</string>
+    <string name="hs_nilai_huruf">Nilai Huruf</string>
+    <string name="hs_nilai_huruf_teori_value">A</string>
+    <string name="hs_nilai_huruf_praktik_value">A</string>
+    <string name="hs_nilai_total">Total Nilai</string>
+    <string name="hs_nilai_total_value">12</string>
+    <string name="hs_ips">IP Semester 1 : </string>
+    <string name="hs_ips_value">3,86</string>
+    <string name="hs_ipk">IPK : </string>
+    <string name="hs_ipk_value">3,83</string>
+    <string name="hs_semester">Semester 1</string>
+    <string name="hs_mk">Bahasa Inggris</string>
+
+    <!--  Kuliah  -->
+    <!-- Jadwal -->
+    <string name="jk">Jadwal Kuliah</string>
+    <string name="jk_kode">Kode</string>
+    <string name="jk_kode_value">TI19101</string>
+    <string name="jk_kode_nama_mk">Nama Matakuliah</string>
+    <string name="jk_kode_nama_mk_value">Sistem Komputasi Awan</string>
+    <string name="jk_dosen">Dosen Pengampu</string>
+    <string name="jk_dosen_value">MH. Ramdhani Ismar, S.T., M.T. </string>
+    <string name="jk_jam">Jam ke</string>
+    <string name="jk_jam_value">3</string>
+    <string name="jk_ruang">Ruang</string>
+    <string name="jk_ruang_value">Ruang 301</string>
+    <string name="jk_gedung_value">Gedung M. Nuh</string>
+    <string name="jk_download">Download Jadwal</string>
+    <string name="jk_hari">Senin</string>
+
+    <!-- Presensi -->
+    <string name="presensi">Presensi</string>
+    <string name="presensi_kuliah">Kuliah</string>
+    <string name="presensi_status">Status</string>
+    <string name="presensi_kuliah_value">Perancangan dan Administrasi Jaringan</string>
+    <string name="presensi_status_value">Hadir</string>
+    <string name="presensi_semester">Semester 1</string>
+    <string name="presensi_minggu">Minggu ke 1</string>
+
+    <!-- kalender -->
+    <string name="kalender_akademik">Kalender Akademik</string>
+
+
+    <!--  Pengumuman  -->
+    <!-- Pengumuman -->
+    <string name="pengumuman">Pengumuman</string>
+    <string name="pengumuman_judul">Pengisian Kuesioner Evaluasi Mengajar Dosen Semester Genap TA 2019–2020</string>
+    <string name="pengumuman_tgl">10/11/2020</string>
+    <string name="pengumuman_kategori">Semua Kategori</string>
+
+    <!-- Detail Pengumuman -->
+    <string name="detail_pengumuman">Detail Pengumuman</string>
+    <string name="dp_judul">Pengisian Kuesioner Evaluasi Mengajar Dosen Semester Genap TA 2019–2020</string>
+    <string name="dp_kategori">Informasi</string>
+    <string name="dp_tgl">10/11/2020</string>
+    <string name="dp_jam">07:15</string>
+    <string name="dp_pengirim">P4MP</string>
+    <string name="dp_isi">Sehubungan telah berakhirnya masa perkuliahan Semester Genap Tahun Akademik 2019–2020, diharapkan kepada seluruh mahasiswa untuk segera mengisi Kuesioner Evaluasi Mengajar Dosen sesuai mata kuliah yang diampu. Penilaian bisa dilakukan mulai hari Jum\'at tanggal 05 Juni 2020 dan akan ditutup tanggal 30 Juni 2020. Atas perhatian dan kerjasamanya diucapkan terima kasih.</string>
+    <string name="dp_kembali">Kembali</string>
+
+    <!--  Daftar Ulang  -->
+    <string name="daftar_ulang">Daftar Ulang</string>
+    <string name="ukt">UKT</string>
+    <string name="du_status">Status</string>
+    <string name="du_ukt_total">Rp. 3.500.000</string>
+    <string name="du_ukt_status">Lunas</string>
+    <string name="du_cetak">Cetak KRS</string>
+
+    <!--  Pengaturan  -->
+    <string name="Pengaturan">Pengaturan</string>
+    <string name="pg_npm">NPM</string>
+    <string name="pg_npm_value">193307010</string>
+    <string name="pg_nama_lengkap">Nama Lengkap</string>
+    <string name="pg_nama_lengkap_value">Dimas Aldi Candra Saputra</string>
+    <string name="pg_password_baru">Password Baru</string>
+    <string name="pg_ulangi_password">Ulangi Password</string>
+    <string name="pg_simpan">Simpan</string>
+    <string name="pg_batal">Batal</string>
+
+    <!--  Wisuda  -->
+    <!-- Daftar Wisuda -->
+    <string name="daftar_wisuda">Daftar Wisuda</string>
+    <string name="wisuda_prodi">Program Studi Teknologi Informasi</string>
+    <string name="wisuda_periode">Periode Akademik</string>
+    <string name="wisuda_tahun">2020/2021</string>
+    <string name="wisuda_nama_mhs">Dimas Aldi Candra Saputra</string>
+    <string name="wisuda_npm">193307010</string>
+    <string name="wisuda_kelas">Kelas 6A</string>
+
+    <!-- Data Pengalaman -->
+    <string name="data_magang">Data Magang/PKL</string>
+    <string name="dm_kosong">Tidak ada Data</string>
+    <string name="dm_informasi">Informasi</string>
+    <string name="dm_informasi_value">Data pengalaman magang / PKL ketika masih kuliah ini digunakan untuk mendukung Surat Keterangan Pendamping Ijazah (SKPI). Pastikan Anda mengisinya dengan benar. </string>
+
+    <!-- Data Keterampilan -->
+    <string name="data_keterampilan">Data Keterampilan</string>
+    <string name="dk_kosong">Tidak ada Data</string>
+    <string name="dk_informasi">Informasi</string>
+    <string name="dk_informasi_value">Data keterampilan ketika masih kuliah ini digunakan untuk mendukung Surat Keterangan Pendamping Ijazah (SKPI). Pastikan Anda mengisinya dengan benar. </string>
+
+    <!-- Data Prestasi -->
+    <string name="data_prestasi">Data Prestasi</string>
+    <string name="dp_kosong">Tidak ada Data</string>
+    <string name="dp_informasi">Informasi</string>
+    <string name="dp_informasi_value">Data Prestasi ketika masih kuliah ini digunakan untuk mendukung Surat Keterangan Pendamping Ijazah (SKPI). Pastikan Anda mengisinya dengan benar. </string>
+
+    <!-- Data Organisasi -->
+    <string name="data_organisasi">Data Organisasi</string>
+    <string name="do_kosong">Tidak ada Data</string>
+    <string name="do_informasi">Informasi</string>
+    <string name="do_informasi_value">Data Organisasi ketika masih kuliah ini digunakan untuk mendukung Surat Keterangan Pendamping Ijazah (SKPI). Pastikan Anda mengisinya dengan benar. </string>
+
+    <!-- Data Bahasa Internasional -->
+    <string name="data_b_internasional">Data Bahasa Internasional</string>
+    <string name="dbi_kosong">Tidak ada Data</string>
+    <string name="dbi_informasi">Informasi</string>
+    <string name="dbi_informasi_value">Data Bahasa Internasional ketika masih kuliah ini digunakan untuk mendukung Surat Keterangan Pendamping Ijazah (SKPI). Pastikan Anda mengisinya dengan benar. </string>
+
+    <!-- Pernyataan -->
+    <string name="pernyataan">Pernyataan</string>
+
+    <!-- Belum terdaftar -->
+    <string name="belum_terdaftar">Anda belum tercatat sebagai mahasiswa yang mengambil tugas akhir</string>
+
+    <!--  Kuesioner  -->
+    <string name="mengisi_kuesioner_visi_misi">Terima kasih telah mengisi kuisioner pemahaman visi misi Politeknik Negeri Madiun</string>
+    <string name="eval_dosen_kosong">Kuisioner penilaian dosen masih belum tersedia.</string>
+    <string name="icon_lamp">Icon Lamp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="data_profil">Data Profil</string>
+    <string name="collon">:</string>
+    <string name="semester_1">Semester 1</string>
+    <string name="icon_arrow">icon arrow</string>
+    <string name="whitespace"> / </string>
+    <string name="icon_setting">Icon Setting</string>
+    <string name="min_8_digit">min 8 digit</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="logo_student_portal">Logo Student Portal</string>
+    <string name="lupa_password">Lupa Password</string>
+    <string name="masukkan_email">Masukkan Email</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="tambah_data_magang_pkl">Tambah Data Magang/PKL</string>
+    <string name="judul">Judul</string>
+    <string name="tempat">Tempat</string>
+    <string name="provinsi">Provinsi</string>
+    <string name="kota_kabupaten">Kota / Kabupaten</string>
+    <string name="tanggal_mulai">Tanggal Mulai</string>
+    <string name="tanggal_selesai">Tanggal Selesai</string>
+    <string name="ringkasan">Ringkasan</string>
+    <string name="upload_scan_bukti_surat_keterangan_pdf_jpg_maks_1_mb">Upload Scan Bukti/Surat Keterangan (PDF/JPG) Maks. 1 MB</string>
+    <string name="pilih_file">Pilih File</string>
+    <string name="upload_laporan_pkl_magang_pdf_maks_5_mb">Upload Laporan PKL/Magang (PDF Maks. 5 MB)</string>
+    <string name="upload_scan_bukti_sertifikat_pdf_jpg_maks_1_mb">Upload Scan Bukti/Sertifikat (PDF/JPG Maks. 1 MB)</string>
+    <string name="tingkat_level">Tingkat Level</string>
+    <string name="jenis_keterampilan">Jenis</string>
+    <string name="nama_keterangan_keterampilan">Nama Keterangan</string>
+    <string name="tambah_data_keterampilan">Tambah Data Keterampilan</string>
+    <string name="upload_scan_bukti_piagam_pdf_jpg_maks_1_mb">Upload Scan Bukti/Piagam (PDF/JPG Maks. 1 MB)</string>
+    <string name="jenis_prestasi">Jenis</string>
+    <string name="tingkat_prestasi">Tingkat</string>
+    <string name="juara_pretasi">Juara</string>
+    <string name="tahun_prestasi">Tahun</string>
+    <string name="nama_kejuaraan_lomba">Nama Kejuaraan / Lomba</string>
+    <string name="tambah_prestasi_baru">Tambah Prestasi Baru</string>
+    <string name="tambah_organisasi_baru">Tambah Organisasi Baru</string>
+    <string name="nama_organisasi_org">Nama Organisasi</string>
+    <string name="tempat_org">Tempat</string>
+    <string name="tahun_masuk_org">Tahun Masuk</string>
+    <string name="tahun_keluar_org">Tahun Keluar</string>
+    <string name="jabatan_org">Jabatan</string>
+    <string name="tambah_data_bahasa_internasional">Tambah Data Bahasa Internasional</string>
+    <string name="periode_wisuda">Periode Wisuda</string>
+    <string name="tahun_wisuda">Tahun Wisuda</string>
+    <string name="nama_bahasa_internasional">Nama Bahasa Internasional</string>
+    <string name="skor">Skor</string>
+    <string name="tanggal_tes">Tanggal Tes</string>
+    <string name="lms">LMS</string>
+    <string name="aktivasi">Aktivasi</string>
+    <string name="ulangi_password">Ulangi Password</string>
+    <string name="tanggal_lahir_dd_mm_yyyy">Tanggal Lahir (dd/mm/yyyy)</string>
+    <string name="search_pnm">Search</string>
+    <string name="jam">jam</string>
+    <string name="dp_alamat_sekarang">Alamat Sekarang</string>
+    <string name="strip">-</string>
+    <string name="kue_evaluasi_dosen">Evaluasi Dosen</string>
+    <string name="kue_pemahaman_visi_misi">Pemahaman Visi Misi</string>
+    <string name="kue_layanan_kemahasiswaan">Layanan Kemahasiswaan</string>
+    <string name="kue_layanan">Layanan</string>
+    <string name="npm_strip">NPM: -</string>
+    <string name="sks">SKS</string>
+    <string name="edit_data_pribadi">Edit Data Pribadi</string>
+    <string name="dp_tempat_lahir">Tempat Lahir</string>
+    <string name="dp_tanggal_lahir">Tanggal Lahir</string>
+    <string name="perempuan">Perempuan</string>
+    <string name="laki_laki">Laki-laki</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="edit_data_orangtua">Edit Data Orangtua</string>
+    <string name="do_pendidikan">Pendidikan</string>
+    <string name="do_pekerjaan">Pekerjaan</string>
+    <string name="do_nip_bila_ada">NIP (bila ada)</string>
+    <string name="do_pangkat_golongan_bila_ada">Pangkat / Golongan (bila ada)</string>
+    <string name="do_penghasilan">Penghasilan</string>
+    <string name="do_instansi_perusahaan_bila_ada">Instansi / perusahaan (bila ada)</string>
+    <string name="do_data_ayah">Data Ayah</string>
+    <string name="do_data_ibu">Data Ibu</string>
+    <string name="do_data_wali">Data Wali</string>
+
+
+    <string-array name="semester_array">
+        <item>Semester 1</item>
+        <item>Semester 2</item>
+        <item>Semester 3</item>
+        <item>Semester 4</item>
+        <item>Semester 5</item>
+        <item>Semester 6</item>
+    </string-array>
+
+    <string-array name="data_mk">
+        <item>Sistem Komputasi Awan</item>
+        <item>Perancangan dan Administrasi Jaringan</item>
+        <item>Pemrograman Mobile</item>
+        <item>Desain dan Analisis Sistem</item>
+        <item>Manajemen Proyek</item>
+    </string-array>
+
+    <string-array name="data_hadir">
+        <item>Hadir</item>
+        <item>Izin</item>
+        <item>Hadir</item>
+        <item>Hadir</item>
+        <item>Hadir</item>
+    </string-array>
+
+    <string-array name="data_judul_pengumuman">
+        <item>Pengisian Kuesioner Evaluasi Mengajar Dosen Semester Genap TA 2019–2020</item>
+        <item>Pengisian Kuesioner Evaluasi Mengajar Dosen Semester Gasal TA 2019–2020</item>
+    </string-array>
+
+    <string-array name="data_tgl_pengumuman">
+        <item>24/11/2020</item>
+        <item>24/12/2020</item>
+    </string-array>
+
+    <string-array name="data_jam_pengumuman">
+        <item>08:35</item>
+        <item>08:35</item>
+    </string-array>
+
+    <string-array name="data_kategori_pengumuman">
+        <item>Informasi</item>
+        <item>Informasi</item>
+    </string-array>
+
+    <string-array name="data_pengirim_pengumuman">
+        <item>P4MP</item>
+        <item>P4MP</item>
+    </string-array>
+
+    <string-array name="data_isi_pengumuman">
+        <item>Sehubungan telah berakhirnya masa perkuliahan Semester Genap Tahun Akademik 2019–2020, diharapkan kepada seluruh mahasiswa untuk segera mengisi Kuesioner Evaluasi Mengajar Dosen sesuai mata kuliah yang diampu. Penilaian bisa dilakukan mulai hari Jum\'at tanggal 05 Juni 2020 dan akan ditutup tanggal 30 Juni 2020. Atas perhatian dan kerjasamanya diucapkan terima kasih.</item>
+        <item>Sehubungan telah berakhirnya masa perkuliahan Semester Gasal Tahun Akademik 2019–2020, diharapkan kepada seluruh mahasiswa untuk segera mengisi Kuesioner Evaluasi Mengajar Dosen sesuai mata kuliah yang diampu. Penilaian bisa dilakukan mulai hari Jum\'at tanggal 05 Juni 2020 dan akan ditutup tanggal 30 Juni 2020. Atas perhatian dan kerjasamanya diucapkan terima kasih.</item>
+    </string-array>
+
+</resources>

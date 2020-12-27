@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite80"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.profile.edit.EditDataOrtuFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp"
+        android:background="@color/colorWhite80">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite80"
+            android:layout_marginBottom="10dp">
+            <EditText
+                android:id="@+id/edt_nik"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/dp_NIK"
+                android:text="@string/strip"
+                android:textColor="@color/colorPrimary"
+                android:background="@color/colorWhite80"
+                android:padding="8dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite80"
+            android:layout_marginBottom="10dp">
+            <EditText
+                android:id="@+id/edt_nama"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/dp_nama_lengkap"
+                android:text="@string/strip"
+                android:textColor="@color/colorPrimary"
+                android:background="@color/colorWhite80"
+                android:padding="8dp"
+                tools:ignore="LabelFor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite80"
+            android:layout_marginBottom="10dp">
+            <EditText
+                android:id="@+id/edt_tanggal_lahir"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/dp_tanggal_lahir"
+                android:text="@string/strip"
+                android:background="@color/colorWhite80"
+                android:textColor="@color/colorPrimary"
+                android:inputType="numberDecimal"
+                android:padding="8dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_height="80dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginStart="9dp"
+                android:text="@string/do_pendidikan"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Spinner
+                    android:id="@+id/spinner_pendidikan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:padding="16dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_height="80dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginStart="9dp"
+                android:text="@string/do_pekerjaan"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Spinner
+                    android:id="@+id/spinner_pekerjaan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:padding="16dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite80"
+            android:layout_marginBottom="10dp">
+            <EditText
+                android:id="@+id/edt_nip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/do_nip_bila_ada"
+                android:text="@string/strip"
+                android:background="@color/colorWhite80"
+                android:textColor="@color/colorPrimary"
+                android:inputType="numberDecimal"
+                android:padding="8dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite80"
+            android:layout_marginBottom="10dp">
+            <EditText
+                android:id="@+id/edt_pangkat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/do_pangkat_golongan_bila_ada"
+                android:text="@string/strip"
+                android:background="@color/colorWhite80"
+                android:textColor="@color/colorPrimary"
+                android:inputType="numberDecimal"
+                android:padding="8dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_height="80dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginStart="9dp"
+                android:text="@string/do_penghasilan"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Spinner
+                    android:id="@+id/spinner_penghasilan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:padding="16dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite80"
+            android:layout_marginBottom="10dp">
+            <EditText
+                android:id="@+id/edt_instansi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/do_instansi_perusahaan_bila_ada"
+                android:text="@string/strip"
+                android:background="@color/colorWhite80"
+                android:textColor="@color/colorPrimary"
+                android:inputType="numberDecimal"
+                android:padding="8dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_simpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="13dp"
+            android:background="@color/colorAccent"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:src="@drawable/ic_save"
+                    app:tint="@color/colorPrimary"
+                    android:layout_marginEnd="14dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pg_simpan"
+                    android:textSize="17sp"
+                    style="@style/MyTextColor"
+                    android:layout_marginEnd="20dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_batal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pg_batal"
+            android:textAllCaps="false"
+            android:padding="20dp"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/colorGray"
+            android:textColor="@color/colorPrimary" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
